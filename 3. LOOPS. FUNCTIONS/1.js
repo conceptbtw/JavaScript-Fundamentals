@@ -1,9 +1,9 @@
 function createArray(start, end) {
-    const arr = [];
+    const array = [];
     for (let i = start; i <= end; i++) {
-        arr.push(i);
+        array.push(i);
     }
-    return arr;
+    return array;
 }
-let array = createArray(2, 9);
-console.log(array);
+let arr = createArray(2, 9);
+console.log(arr);
