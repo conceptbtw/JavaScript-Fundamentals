@@ -5,4 +5,4 @@ function printWithRepeat(a, b) {
       }
     }
   }
-  printWithRepeat(1, 5);
+printWithRepeat(1, 5);
