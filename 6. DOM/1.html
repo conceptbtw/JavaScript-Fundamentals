@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+</head>
+<body>
+    <ul id="list">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+    <button onclick="showListContent()">Show list</button>
+    <script>
+        function showListContent() {
+            const list = document.getElementById("list");
+            const items = list.getElementsByTagName("li");
+            const content = [
+                items[0].textContent,
+                items[items.length - 1].textContent,
+                items[1].textContent,
+                items[3].textContent,
+                items[2].textContent
+            ];
+            const result = content.join(', ');
+            alert("Result: " + result);
+        }
+    </script>
+</body>
+</html>
