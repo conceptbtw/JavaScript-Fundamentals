@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>List</title>
+  <title>List</title>
 </head>
+
 <body>
-    <h1>I'am a big header!!!</h1>
-    <div id="myDiv">
-      <p id="first">First paragraph</p>
-      <p id="sec">Second paragraph</p>
-      <p id="third">Third paragraph</p>
-      <p id="fourth">Fourth paragraph</p>
-    </div>
-    <ul id="myList">
-      <li>Make</li>
-      <li>me</li>
-      <li>horizontal!</li>
-    </ul>
-    <span>Make me invisible, please!</span>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const header = document.querySelector("h1");
-        header.style.backgroundColor = "green";
+  <h1>I'am a big header!!!</h1>
+  <div id="myDiv">
+    <p id="first">First paragraph</p>
+    <p id="sec">Second paragraph</p>
+    <p id="third">Third paragraph</p>
+    <p id="fourth">Fourth paragraph</p>
+  </div>
+  <ul id="myList">
+    <li>Make</li>
+    <li>me</li>
+    <li>horizontal!</li>
+  </ul>
+  <span>Make me invisible, please!</span>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const header = document.querySelector("h1");
+      header.style.backgroundColor = "green";
 
-        const first = document.querySelector("#myDiv #first");
-        first.style.fontWeight = "bold";
+      const first = document.querySelector("#myDiv #first");
+      first.style.fontWeight = "bold";
 
-        const sec = document.querySelector("#myDiv #sec");
-        sec.style.color = "red";
+      const sec = document.querySelector("#myDiv #sec");
+      sec.style.color = "red";
 
-        const third = document.querySelector("#myDiv #third");
-        third.style.textDecoration = "underline";
+      const third = document.querySelector("#myDiv #third");
+      third.style.textDecoration = "underline";
 
-        const fourth = document.querySelector("#myDiv #fourth");
-        fourth.style.fontStyle = "italic";
+      const fourth = document.querySelector("#myDiv #fourth");
+      fourth.style.fontStyle = "italic";
 
-        const list = document.querySelectorAll("#myList li");
-        for (let i = 0; i < list.length; i++) {
-            list[i].style.display = "inline";
-        }
+      const list = document.querySelectorAll("#myList li");
+      for (let i = 0; i < list.length; i++) {
+        list[i].style.display = "inline";
+      }
 
-        const spanEl = document.querySelector("span");
-        spanEl.style.visibility = "hidden";
-        })
-    </script>
+      const spanEl = document.querySelector("span");
+      spanEl.style.visibility = "hidden";
+    })
+  </script>
 </body>
+
 </html>
